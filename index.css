@@ -1,0 +1,106 @@
+/******************************
+
+   index.css
+   create : 2016/09/23
+            c.osawa
+   update : 
+  
+   ポートフォリオページ
+   https://chinatsuosawa.github.io/
+
+   index.html用cssファイル
+  
+ ******************************/
+
+/*************************
+  .jumbotron-extend
+  
+  position: 相対位置で配置
+  height: 画面最大
+  min-height： 最小高さ200px
+  background： 背景画像 設定
+  background-size： 画面サイズに画像サイズを合わせる
+  
+ *************************/
+.jumbotron-extend {
+    position: relative;
+    height: 100vh;
+    min-height: 200px;
+    background: url(./img/background.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+/*************************
+  .jumbotron-container
+  
+  position: 相対位置で配置
+  top: 50%;
+  transform: translateY(-50%);
+  
+ *************************/
+.jumbotron-container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*************************
+  .header-name
+  
+  margin-bottom: 内側余白 下10px;
+  font-family:
+  
+ *************************/
+.header-name{
+    margin-bottom: 10px;
+    font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+}
+
+/*************************
+  .container-fluid p
+  
+  font-size: 14px;
+  margin: 外側余白 上右0 下左5px
+  padding: 内側余白 上下左右0
+  font-family: 
+  
+ *************************/
+.container-fluid p{
+    font-size: 14px;
+    margin: 0 0 5px 5px;
+    padding: 0px;
+    font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+}
+
+
+.btn-black {
+    border-radius: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Avenir', serif;
+}
+
+.btn-black:hover {
+     background-color: #ccc;
+     color: #fff;
+}
+
+
+
+/*************************
+  footer
+
+  margin: 外側余白 上下左右0
+  padding: 内側余白 上下左右0
+  font-size: 12px
+  text-align: 文字位置 中央
+  color:  文字色 設定
+
+ *************************/
+footer {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  text-align: center;
+  color: #666;
+}
