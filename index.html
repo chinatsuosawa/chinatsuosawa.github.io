@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="千葉県在住のプログラマー見習いのポートフォリオ。HTMLのタグ構造が未だに苦手・・・">
+    <!--descriptionはこんな感じです。基本的に検索でヒットした時の説明文的なものになります。-->
     
     <title>chinatsuosawa / Portfolio</title>
     <!-- Bootstrap CSS -->
@@ -17,26 +19,52 @@
   </head>
 
   <body>
-    <!-- header -->
-    <header>
-      <div class="jumbotron jumbotron-extend">
-        <div class="container-fluid jumbotron-container">
-          <h1 class="header-name">chinatsuosawa</h1>
-          <p>千葉県在住のプログラマー見習い</p>
-          <p>HTMLのタグ構造が未だに似苦手</p>
-          <p>何かあれば下まで</p>
-        　<p><a class="btn btn-black" href="#" role="button">CONTACT ME</a></p>
-        </div>
-      </div>
-    </header>
-    
     <!-- main -->
-    <div class="">
-      
+      <div class="jumbotron">
+        <div class="container-fluid jumbotron-container">
+          <div class="row">
+            <h1 class="sitename">About this page</h1>
+            <h2 class="myname">chinatsuosawa</h2>
+            <p>千葉県在住のプログラマー見習い</p>
+            <p>現在<a href="http://railstutorial.jp/" target="_blank">Ruby on Rails</a>を勉強中</p>
+            <p>何かあれば下まで</p>
+          　<p><a class="btn btn-black" href="#" role="button">CONTACT ME</a></p>
+        　</div>
+        　
+        　<!--ここから先細<ul>で書いていた部分を改造しています。-->
+        　<!--基本的にはBootstrapで出来る横のレイアウト部分を受け持っています。-->
+        　<!--足りない部分はCSSで調整しています。-->
+        　
+          <section class="myapp">
+            <div class="col-sm-offset-1 col-sm-7">
+              <div class="row">
+                <h3>My app</h3>
+                <figure class="col-sm-6 col-md-3">
+                  <figcaption>アプリ1</figcaption>
+                  <img src="./img/mock.png"></img>
+                </figure>
+                <figure class="col-sm-6 col-md-3">
+                  <figcaption>アプリ2</figcaption>
+                  <img src="./img/mock.png"></img>
+                </figure>
+                <figure class="col-sm-6 col-md-3">
+                  <figcaption>アプリ3</figcaption>
+                  <img src="./img/mock.png"></img>
+                </figure>
+                <figure class="col-sm-6 col-md-3">
+                  <figcaption>アプリ4</figcaption>
+                  <img src="./img/mock.png"></img>
+                </figure>
+              </div>
+           </div>
+         </section>
+      </div>
     </div>
+
     <!-- footer -->
     <footer>
-      <p>&copy; 2016 <a href="https://chinatsuosawa.github.io/">chinatsuosawa</a></p>
+      <p><a href="https://github.com/chinatsuosawa">https://github.com/chinatsuosawa</a></p>
+      <p>&copy; 2016 chinatsuosawa</p>
     </footer>
   </body>
 </html>

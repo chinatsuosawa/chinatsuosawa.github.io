@@ -1,7 +1,7 @@
-/******************************
+/**************************************************
 
    index.css
-   create : 2016/09/23
+   create : 2016/09/26
             c.osawa
    update : 
   
@@ -10,53 +10,70 @@
 
    index.html用cssファイル
   
- ******************************/
+ **************************************************/
 
-/*************************
-  .jumbotron-extend
+/**************************************************
+  body
   
-  position: 相対位置で配置
-  height: 画面最大
-  min-height： 最小高さ200px
   background： 背景画像 設定
   background-size： 画面サイズに画像サイズを合わせる
   
- *************************/
-.jumbotron-extend {
-    position: relative;
-    height: 100vh;
-    min-height: 200px;
-    background: url(./img/background.jpg) no-repeat center center;
-    background-size: cover;
+ **************************************************/
+body {
+  background: url(./img/background.jpg) no-repeat center center;
+  background-size: cover;
+  margin: 0 15px;
 }
 
-/*************************
+/**************************************************
+  .jumbotron
+  
+  background-color: 背景初期化（透明）
+  
+ **************************************************/
+.jumbotron{
+    background-color: transparent;
+}
+
+/**************************************************
   .jumbotron-container
   
-  position: 相対位置で配置
-  top: 50%;
-  transform: translateY(-50%);
+  margin-top: 内側余白 上450px;
+  transform: translateY(-14%);
   
- *************************/
+ **************************************************/
 .jumbotron-container {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+  margin-top: 450px;
+  transform: translateY(-14%);
 }
 
-/*************************
-  .header-name
+/**************************************************
+  .sitename
   
   margin-bottom: 内側余白 下10px;
   font-family:
   
- *************************/
-.header-name{
-    margin-bottom: 10px;
-    font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+ **************************************************/
+.sitename{
+  margin-bottom: 10px;
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
 }
 
-/*************************
+/**************************************************
+  .myname
+  
+  margin-bottom: 内側余白 上10px;
+  margin-bottom: 内側余白 下15px;
+  font-family:
+  
+ **************************************************/
+.myname{
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+}
+
+/**************************************************
   .container-fluid p
   
   font-size: 14px;
@@ -64,13 +81,65 @@
   padding: 内側余白 上下左右0
   font-family: 
   
- *************************/
+ **************************************************/
 .container-fluid p{
     font-size: 14px;
     margin: 0 0 5px 5px;
     padding: 0px;
     font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
 }
+
+/**************************************************
+  .myapp
+  
+  margin-top: 内側余白 上100px;
+
+ **************************************************/
+.myapp {
+    margin-top: 100px;
+}
+
+/**************************************************
+  .myapp h3
+  
+  margin-top: 内側余白 下60px;
+
+ **************************************************/
+.myapp h3 {
+  margin-bottom: 60px;
+}
+
+/**************************************************
+  .myapp figure
+  
+  text-align: 文字位置 中央
+
+ **************************************************/
+.myapp figure {
+  text-align: center;
+}
+
+/**************************************************
+  .myapp figcaption
+  
+  
+
+ **************************************************/
+.myapp figcaption{
+  
+}
+
+@media (max-width: 767px) {
+  .myapp img {
+    width: 80%;
+  }
+}
+@media (min-width: 768px) {
+  .myapp img {
+    width: 100%;
+  }
+}
+
 
 
 .btn-black {
@@ -85,9 +154,7 @@
      color: #fff;
 }
 
-
-
-/*************************
+/**************************************************
   footer
 
   margin: 外側余白 上下左右0
@@ -96,7 +163,7 @@
   text-align: 文字位置 中央
   color:  文字色 設定
 
- *************************/
+ **************************************************/
 footer {
   margin: 0;
   padding: 0;
