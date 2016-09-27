@@ -3,7 +3,8 @@
    index.css
    create : 2016/09/26
             c.osawa
-   update : 
+   update : 2016/09/27
+            c.osawa
   
    ポートフォリオページ
    https://chinatsuosawa.github.io/
@@ -90,6 +91,34 @@ body {
 }
 
 /**************************************************
+  .btn-black
+  
+  border-radius: 角丸0;
+  background-color: #000;
+  color: #fff;
+  font-family:
+  
+ **************************************************/
+.btn-black {
+    border-radius: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Avenir', serif;
+}
+
+/**************************************************
+  .btn-black:hover
+  
+  background-color: #ccc;
+  color: #fff;
+  
+ **************************************************/
+.btn-black:hover {
+     background-color: #ccc;
+     color: #fff;
+}
+
+/**************************************************
   .myapp
   
   margin-top: 内側余白 上100px;
@@ -102,11 +131,11 @@ body {
 /**************************************************
   .myapp h3
   
-  margin-top: 内側余白 下60px;
+  margin-bottom: 内側余白 下20px;
 
  **************************************************/
 .myapp h3 {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 /**************************************************
@@ -122,36 +151,57 @@ body {
 /**************************************************
   .myapp figcaption
   
-  
+  margin-top: 内側余白 上50px;
+  margin-bottom: 内側余白 下10px;
+  font-size: 15px;
+  font-family: 
 
  **************************************************/
 .myapp figcaption{
-  
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
 }
 
+/**************************************************
+  .myapp figcaption
+  
+  margin-top: 内側余白 上10px;
+  font-size: 12px;
+  font-family: 
+
+ **************************************************/
+.myapp p{
+  margin-top: 10px;
+  font-size: 12px;
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+}
+
+/**************************************************
+   Media Queries
+  .myapp img
+  
+  width: ビューエリアが767px以下の場合、画像サイズを80%で表示
+  
+ **************************************************/
 @media (max-width: 767px) {
   .myapp img {
     width: 80%;
   }
 }
+
+/**************************************************
+   Media Queries
+  .myapp img
+  
+  width: ビューエリアが768px以上の場合、画像サイズを100%で表示
+  
+ **************************************************/
 @media (min-width: 768px) {
   .myapp img {
     width: 100%;
   }
-}
-
-
-
-.btn-black {
-    border-radius: 0;
-    background-color: #000;
-    color: #fff;
-    font-family: 'Avenir', serif;
-}
-
-.btn-black:hover {
-     background-color: #ccc;
-     color: #fff;
 }
 
 /**************************************************
